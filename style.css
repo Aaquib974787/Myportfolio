@@ -1,0 +1,45 @@
+#contactfirst {
+    background-color: lightgreen;
+}
+
+#contactdetails {
+    padding: 10px; /* Add some padding to the container */
+}
+
+
+ h1{
+    background-color: white;
+    display: inline;
+     --s: 0.1em;   /* the thickness of the line */
+    --c: #2c4bff; /* the color */
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: 0.5s;
+    height: 100;
+
+    margin: 0;
+    display: grid;
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+#contactheading h1:hover {--_p: 100%}
+#contactform{
+    background-color:#FFA500;
+    border: #000 solid 2px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+#contactform:hover + #contactsecond {
+    opacity: 1;
+}
